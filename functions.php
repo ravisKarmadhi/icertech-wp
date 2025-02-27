@@ -136,7 +136,8 @@ function code_for_cart()
                   $variation_price = WC()->cart->get_product_price( $product );
                   if ($product_type === 'variation') {
                       $variation = new WC_Product_Variation($variation_id);
-                     $image_tag = get_field_object($variation_id,'image')['url'];
+                      $image_tag = get_field_object($variation_id,'image');
+                     $image_tag = ($image_tag) ? $image_tag['url'] : "";
                       $variation_attributes = $variation->get_variation_attributes();
                       $variation_name = implode(', ', array_values($variation_attributes));
                       

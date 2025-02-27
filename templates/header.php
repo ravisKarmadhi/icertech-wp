@@ -6,6 +6,8 @@ $top_bar = get_field('top_bar', 'option');
 $header_color = get_field('header_color');
 if ($header_color === "black") {
   $headerClass = "black-header";
+} else {
+    $headerClass = "";
 }
 ?>
 <!-- ========================= header ================ -->
@@ -45,7 +47,7 @@ if ($header_color === "black") {
           <div class="row align-items-center flex-column flex-lg-row">
             <div class="col-lg-2 col-12 d-flex justify-content-between">
               <a href="<?php echo get_home_url(); ?>" class="d-inline-block header-logo">
-                <img src="<?php echo esc_url($blackLogo['url']); ?>" class="w-100 white-logo" alt="">
+                <img src="<?php echo esc_url($logo['url']); ?>" class="w-100 white-logo" alt="">
                 <img src="<?php echo esc_url($blackLogo['url']); ?>"
                   class="w-100 black-logo" alt="">
               </a>

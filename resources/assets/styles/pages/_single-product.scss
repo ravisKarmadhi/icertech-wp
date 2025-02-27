@@ -81,6 +81,9 @@
             border-radius: 100px !important;
             font-size: 20px !important;
             color: $white;
+            &:hover{
+                color: $white;
+            }
         }
 
         .single_variation_wrap {
