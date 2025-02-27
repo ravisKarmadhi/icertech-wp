@@ -161,14 +161,21 @@ $pricing =  get_post_meta($product_id, '_pricing_rules',true);
 			<div class="col-md-6 col-12 tmb-20 product-desc-col">
                 <div class="bg-f2f3f4 h-100 p-lg-5 p-4 radius30">
                     <h6 class="red-hat font20 text-013945 dmb-20">Specification</h6>
-                    <?php if (!empty($product_specification['specification']) && is_array($product_specification['specification'])) : ?>
-                    <?php foreach ($product_specification['specification'] as $specification_items): ?>
-                        <div class="d-flex dmb-20">
-                            <div class="col-lg-4 col-6 red-hat font22 text-4d4d4d pe-lg-3"><?php echo $specification_items['title'] ?></div>
-                            <div class="col-lg-8 col-6 red-hat font22 text-4d4d4d ps-lg-2"><?php echo $specification_items['content'] ?></div>
-                        </div>
-                        <?php endforeach; ?>
-                        <?php endif; ?>
+                    <?php if (!empty($product_specification) && isset($product_specification['specification']) && is_array($product_specification['specification'])) : ?>
+    <?php foreach ($product_specification['specification'] as $specification_items): ?>
+        <div class="d-flex dmb-20">
+            <div class="col-lg-4 col-6 red-hat font22 text-4d4d4d pe-lg-3">
+                <?php echo !empty($specification_items['title']) ? esc_html($specification_items['title']) : 'N/A'; ?>
+            </div>
+            <div class="col-lg-8 col-6 red-hat font22 text-4d4d4d ps-lg-2">
+                <?php echo !empty($specification_items['content']) ? esc_html($specification_items['content']) : 'N/A'; ?>
+            </div>
+        </div>
+    <?php endforeach; ?>
+<?php else: ?>
+    <p>No specifications available.</p>
+<?php endif; ?>
+
                 </div>
 			</div>
 		</div>
