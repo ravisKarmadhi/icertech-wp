@@ -999,7 +999,7 @@ if (have_rows('page_builder')):
 												class="btnA white-border-btn d-inline-flex align-items-center justify-content-center rounded-pill font18 fw-medium text-decoration-none transition res-w-100 me-lg-5 tmb-30">Learn
 												More</a>
 											<a href="javascript:void(0)" data-id="<?php echo $id; ?>"
-												data-name="<?php echo $post_data->post_title; ?>"
+												data-name="<?php echo !empty($post_data->post_title) ? $post_data->post_title : ''; ?>"
 												data-image="<?php echo get_the_post_thumbnail_url($id); ?>"
 												class="add-btn btnA white-border-btn d-inline-flex align-items-center justify-content-center rounded-pill font18 fw-medium text-decoration-none transition res-w-100">Order
 												Sample</a>
@@ -1430,7 +1430,7 @@ if (have_rows('page_builder')):
 					<div class="inner-footprint radius30 pe-3">
 						<div class="d-flex justify-content-end dpt-30">
 							<div
-								class="footprint-icon bg-013945 d-inline-flex align-items-center justify-content-center rounded-pill">
+								class="footprint-icon bg-013945 d-inline-flex align-items-center justify-content-center rounded-pill cursor-pointer">
 								<img src="<?php echo get_home_url(); ?>/wp-content/uploads/2025/02/white-close.svg" alt="" class="">
 							</div>
 						</div>
@@ -1826,7 +1826,7 @@ if (have_rows('page_builder')):
 										class="btnA white-border-btn d-inline-flex align-items-center justify-content-center rounded-pill font18 fw-medium text-decoration-none transition res-w-100 mx-lg-3 tmb-15"><?php echo $calculation__section_button_1['title']; ?></a>
 								<?php endif; ?>
 								<a href="javascript:void(0)" data-id="<?php echo $id; ?>"
-									data-name="<?php echo $post_data->post_title; ?>"
+									data-name="<?php echo !empty($post_data->post_title) ? $post_data->post_title : ''; ?>"
 									data-image="<?php echo get_the_post_thumbnail_url($id); ?>"
 									class="add-btn btnA white-border-btn d-inline-flex align-items-center justify-content-center rounded-pill font18 fw-medium text-decoration-none transition res-w-100 mx-lg-3 tmb-15">Order
 									Sample</a>
