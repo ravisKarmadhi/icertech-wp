@@ -116,6 +116,7 @@ $pricing =  get_post_meta($product_id, '_pricing_rules', true);
             <h2 class="text-center red-hat font30 text-013945 dmb-20">Bulk Pricing</h2>
             <div class="bulk-pricing-group d-lg-block d-flex radius30 overflow-x-auto">
                 <?php foreach ($pricing as $value):
+                  if (isset($value['variation_rules']['args']['variations'][0])) {
                     $value_master = $value['variation_rules']['args']['variations'][0];
                     $variation = new WC_Product_Variation($value_master);
                     $variation_image_id = $variation->get_image_id();
@@ -123,6 +124,13 @@ $pricing =  get_post_meta($product_id, '_pricing_rules', true);
                     $variation_attributes = $variation->get_variation_attributes();
                     $variation_name = implode(', ', array_values($variation_attributes));
                     $variation_description = $variation->get_description();
+                } else {
+                    $value_master = null;
+                    $image_url = '';
+                    $variation_name = 'N/A';
+                    $variation_description = 'No variation available';
+                }
+                
                 ?>
                     <div class="bulk-pricing-item d-flex flex-lg-row flex-column align-items-center justify-content-between w-100">
                         <div class="bulk-pricing-img p-4 h-100 d-inline-block">
@@ -179,7 +187,6 @@ $pricing =  get_post_meta($product_id, '_pricing_rules', true);
                     <?php else: ?>
                         <p>No specifications available.</p>
                     <?php endif; ?>
-
                 </div>
             </div>
         </div>
