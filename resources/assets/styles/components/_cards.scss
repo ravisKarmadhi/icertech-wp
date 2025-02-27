@@ -101,7 +101,7 @@
 
         &::after {
             content: "";
-            background: url("/wp-content/uploads/2024/08/cards-hover-img.svg");
+            background: url("/wp-content/uploads/2025/02/cards-hover-img.svg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             height: 100%;
@@ -140,7 +140,7 @@
     &.active {
         &::after {
             content: '';
-            background: url('/wp-content/uploads/2024/08/cards-hover-img.svg');
+            background: url('/wp-content/uploads/2025/02/cards-hover-img.svg');
             background-size: 100% 100%;
             height: 100%;
             width: 100%;
@@ -177,7 +177,7 @@
 
     .range-card-img {
         padding-bottom: 45px;
-        background-image: url('/wp-content/uploads/2024/08/shadow.svg');
+        background-image: url('/wp-content/uploads/2025/02/shadow.svg');
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
@@ -208,7 +208,7 @@
 
     &::after {
         content: '';
-        background: url('/wp-content/uploads/2024/08/range-card-line-bg.svg');
+        background: url('/wp-content/uploads/2025/02/range-card-line-bg.svg');
         background-size: 100% 100%;
         height: 100%;
         width: 100%;
@@ -233,7 +233,7 @@
 
         &::after {
             content: '';
-            background: url('/wp-content/uploads/2024/08/cards-hover-img.svg');
+            background: url('/wp-content/uploads/2025/02/cards-hover-img.svg');
             background-size: 100% 100%;
             height: 100%;
             width: 100%;
@@ -332,14 +332,14 @@
 
 .solution-box-card,
 .related-product-card {
-    background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-light.png');
+    background-image: url('/wp-content/uploads/2025/02/solution-card-bg-pattern-light.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
     height: 428px;
 
     &.white-bg {
-        background-image: url('/wp-content/uploads/2024/08/solution-bg-pattern-white.png');
+        background-image: url('/wp-content/uploads/2025/02/solution-bg-pattern-white.png');
     }
 
     @include media-breakpoint-down(lg) {
@@ -359,7 +359,7 @@
     }
 
     &:hover {
-        background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-dark.png');
+        background-image: url('/wp-content/uploads/2025/02/solution-card-bg-pattern-dark.png');
 
         .solution-box-card-img,
         .related-product-card-img {
@@ -398,7 +398,7 @@
 
 .related.products {
     .single-shop-page {
-        background-image: url('/wp-content/uploads/2024/08/solution-bg-pattern-white.png');
+        background-image: url('/wp-content/uploads/2025/02/solution-bg-pattern-white.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 390px;
@@ -429,7 +429,7 @@
         }
 
         &:hover {
-            background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-dark.png');
+            background-image: url('/wp-content/uploads/2025/02/solution-card-bg-pattern-dark.png');
 
             .shop-card-img {
                 transform: translateY(-20px);

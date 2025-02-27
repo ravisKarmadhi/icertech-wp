@@ -110,7 +110,7 @@ $pricing =  get_post_meta($product_id, '_pricing_rules',true);
 <section class="bulk-pricing-section dmt-100">
 	<div class="container">
 		<h2 class="text-center red-hat font30 text-013945 dmb-20">Bulk Pricing</h2>
-		<div class="bulk-pricing-group d-lg-block d-flex radius30 overflow-x-auto">
+		<div class="bulk-pricing-group 444 d-lg-block d-flex radius30 overflow-x-auto">
             <?php foreach ($pricing as $value): 
               if (isset($value['variation_rules']['args']['variations'][0])) {
                 $value_master = $value['variation_rules']['args']['variations'][0];
