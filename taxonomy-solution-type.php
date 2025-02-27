@@ -23,7 +23,7 @@ array(
         <!-- hero-section -->
 
         <section class="home-hero-section position-relative">
-            <img src="/wp-content/uploads/2024/08/hero-img.jpg" class="w-100 h-100 object-cover" alt="">
+            <img src="/wp-content/uploads/2025/02/hero-img.jpg" class="w-100 h-100 object-cover" alt="">
             <div class="home-hero-content position-absolute w-100">
                 <div class="container">
                     <div class="col-lg-7 col-12 mx-auto px-2 px-lg-0 d-flex align-items-center h-100 justify-content-center">
