@@ -188,7 +188,7 @@ export class Cart {
                                 </div>
                                 <div class="col-lg-2 d-flex align-items-center justify-content-end">
                                     <button class="remove-btn col-lg-2 p-0 border-0 bg-transparent" data-id="${product.id}" data-name="${product.name}" data-image="${product.image}">
-                                    <img src="/wp-content/uploads/2024/09/icon-delete.svg">
+                                    <img src="/wp-content/uploads/2025/02/icon-delete.svg">
                                     </button>
                                 </div>
                             </div>

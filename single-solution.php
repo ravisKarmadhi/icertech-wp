@@ -15,7 +15,7 @@ endif;
 ?>
 <!-- hero-section -->
 <section class="home-hero-section box-hero-section hero-section position-relative <?php echo $class_color; ?>">
-  <img src="/wp-content/uploads/2024/08/enviro-hero-img.png" class="w-100 h-100 object-cover" alt="">
+  <img src="/wp-content/uploads/2025/02/enviro-hero-img.png" class="w-100 h-100 object-cover" alt="">
   <div class="home-hero-content position-absolute w-100 text-center dpt-200 z-3">
     <div class="font48 res-font30 fw-medium text-013945 d-flex align-items-center h-100 justify-content-center"><?php the_title(); ?></div>
   </div>
