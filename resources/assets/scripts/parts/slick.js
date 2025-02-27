@@ -23,8 +23,8 @@ export class Slick {
             slidesToScroll: 1,
             dots: false,
             arrows: true,
-            prevArrow: '<button class="slick--prev position-absolute start-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2024/08/left-arrow.png" class="h-100"></button>',
-            nextArrow: '<button class="slick--next position-absolute end-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2024/08/right-arrow.png" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev position-absolute start-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2025/02/left-arrow-1.png" class="h-100"></button>',
+            nextArrow: '<button class="slick--next position-absolute end-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2025/02/right-arrow-1.png" class="h-100"></button>',
             responsive: [
                 {
                     breakpoint: 1024,
