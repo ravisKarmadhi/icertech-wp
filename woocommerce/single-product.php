@@ -160,9 +160,8 @@ $pricing =  get_post_meta($product_id, '_pricing_rules',true);
 			</div>
 			<div class="col-md-6 col-12 tmb-20 product-desc-col">
                 <div class="bg-f2f3f4 h-100 p-lg-5 p-4 radius30">
-                    <h6 class="red-hat font20 text-013945 dmb-20">Specification ssssss</h6>
-                    <?php 
-if (isset($product_specification['specification']) && is_array($product_specification['specification']) && !empty($product_specification['specification'])) : ?>
+                    <h6 class="red-hat font20 text-013945 dmb-20">Specification</h6>
+                    <?php if (!empty($product_specification) && isset($product_specification['specification']) && is_array($product_specification['specification'])) : ?>
     <?php foreach ($product_specification['specification'] as $specification_items): ?>
         <div class="d-flex dmb-20">
             <div class="col-lg-4 col-6 red-hat font22 text-4d4d4d pe-lg-3">
