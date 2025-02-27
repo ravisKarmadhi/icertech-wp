@@ -23,8 +23,8 @@ export class Slick {
             slidesToScroll: 1,
             dots: false,
             arrows: true,
-            prevArrow: '<button class="slick--prev position-absolute start-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2024/08/left-arrow.png" class="h-100"></button>',
-            nextArrow: '<button class="slick--next position-absolute end-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2024/08/right-arrow.png" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev position-absolute start-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2025/02/left-arrow.png" class="h-100"></button>',
+            nextArrow: '<button class="slick--next position-absolute end-0 rounded-circle z-3 bg-013945 border-0 d-flex"><img src="/wp-content/uploads/2025/02/right-arrow.png" class="h-100"></button>',
             responsive: [
                 {
                     breakpoint: 1024,
@@ -63,8 +63,8 @@ export class Slick {
             slideToScroll: 1,
             infinite: true,
             draggable: true,
-            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2024/08/top-slider-arrow.svg" class="h-100"></button>',
-            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2024/08/bottom-slider-arrow.svg" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2025/02/top-slider-arrow.svg" class="h-100"></button>',
+            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2025/02/bottom-slider-arrow.svg" class="h-100"></button>',
         });
     }
     TeamSlider() {
@@ -74,8 +74,8 @@ export class Slick {
             slidesToScroll: 1,
             dots: true,
             arrows: true,
-            prevArrow: '<button class="slick--prev z-3 bg-transparent border-0 p-0 d-flex me-3"><img src="/wp-content/uploads/2024/08/team-left-arrow.svg" class="h-100"></button>',
-            nextArrow: '<button class="slick--next z-3 bg-transparent border-0 p-0 d-flex ms-3"><img src="/wp-content/uploads/2024/08/team-right-arrow.svg" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev z-3 bg-transparent border-0 p-0 d-flex me-3"><img src="/wp-content/uploads/2025/02/team-left-arrow.svg" class="h-100"></button>',
+            nextArrow: '<button class="slick--next z-3 bg-transparent border-0 p-0 d-flex ms-3"><img src="/wp-content/uploads/2025/02/team-right-arrow.svg" class="h-100"></button>',
             responsive: [
                 {
                     breakpoint: 1024,
@@ -202,8 +202,8 @@ export class Slick {
             slideToScroll: 1,
             infinite: false,
             draggable: true,
-            prevArrow: '<button class="slick--prev d-flex border-0 bg-transparent mb-lg-2 me-lg-0 me-2 position-absolute z-3"><img src="/wp-content/uploads/2024/08/top-slider-arrow.svg" class="h-100"></button>',
-            nextArrow: '<button class="slick--next d-flex border-0 bg-transparent mt-lg-2 ms-lg-0 ms-2 position-absolute z-3"><img src="/wp-content/uploads/2024/08/bottom-slider-arrow.svg" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev d-flex border-0 bg-transparent mb-lg-2 me-lg-0 me-2 position-absolute z-3"><img src="/wp-content/uploads/2025/02/top-slider-arrow.svg" class="h-100"></button>',
+            nextArrow: '<button class="slick--next d-flex border-0 bg-transparent mt-lg-2 ms-lg-0 ms-2 position-absolute z-3"><img src="/wp-content/uploads/2025/02/bottom-slider-arrow.svg" class="h-100"></button>',
         });
     }
     LeftSlider() {
@@ -215,8 +215,8 @@ export class Slick {
             slideToScroll: 1,
             infinite: false,
             draggable: true,
-            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2024/08/top-slider-arrow.svg" class="h-100"></button>',
-            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2024/08/bottom-slider-arrow.svg" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2025/02/top-slider-arrow.svg" class="h-100"></button>',
+            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2025/02/bottom-slider-arrow.svg" class="h-100"></button>',
         });
     }
     RightSlider() {
@@ -228,8 +228,8 @@ export class Slick {
             slideToScroll: 1,
             infinite: false,
             draggable: true,
-            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2024/08/top-slider-arrow.svg" class="h-100"></button>',
-            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2024/08/bottom-slider-arrow.svg" class="h-100"></button>',
+            prevArrow: '<button class="slick--prev d-flex align-items-center border-0 bg-transparent me-lg-0 me-2"><img src="/wp-content/uploads/2025/02/top-slider-arrow.svg" class="h-100"></button>',
+            nextArrow: '<button class="slick--next d-flex align-items-center border-0 bg-transparent ms-lg-0 ms-2"><img src="/wp-content/uploads/2025/02/bottom-slider-arrow.svg" class="h-100"></button>',
         });
     }
     SingleProductSlider() {

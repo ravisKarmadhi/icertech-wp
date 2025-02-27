@@ -425,7 +425,7 @@ if (have_rows('page_builder')):
 							</div>
 							<div class="dpb-100 tpb-50">
 								<div class="row">
-									<?php foreach ($why_work_icon_box as $work_icon_box): ?>
+									<?php foreach ($why_work_icon_box as $work_icon_box):?>
 										<?php if ($why_work_column == 'two'): ?>
 											<div class="col-lg-6 col-12 dmb-30 tmb-10">
 											<?php else: ?>
