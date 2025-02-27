@@ -1,0 +1,12 @@
+.delivery-hero-section{
+    .delivery-hero-img{
+        height:520px;
+
+        @include media-breakpoint-down(lg){
+            height:420px;
+        }
+    }
+    .delivery-index{
+        margin-top:-35px;
+    }
+}

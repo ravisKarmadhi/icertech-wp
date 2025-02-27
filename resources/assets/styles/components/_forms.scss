@@ -1,0 +1,222 @@
+input {
+    border: 1px solid $color-666666;
+    height: 48px;
+
+    @include media-breakpoint-down(lg) {
+        height: 56px;
+    }
+
+    &::placeholder {
+        font-family: "RedHatDisplay-VariableFont_wght";
+        font-size: $font15;
+        color: $color-333333;
+    }
+    &.input-radio{
+        height: auto !important;
+    }
+}
+
+.input-text {
+    border: 1px solid $color-666666;
+    height: 80px;
+
+    @include media-breakpoint-down(lg) {
+        height: 56px;
+    }
+
+    &::placeholder {
+        font-family: "Roboto-Regular";
+        font-size: $font20;
+        color: $color-69727d;
+
+        @include media-breakpoint-down(lg) {
+            font-size: $font16;
+        }
+    }
+}
+
+.quick-contact-form {
+    .input-row>* {
+        padding: 0 12px !important;
+    }
+
+    .input-row {
+        margin: 0 -12px !important;
+
+        input {
+            height: 59px;
+            border-radius: 30px;
+            border: 1px solid $color-69727d;
+            margin-bottom: 25px;
+
+            &::placeholder {
+                font-family: "RedHatDisplay-VariableFont_wght";
+                color: $color-a8a8a8;
+                font-size: $font18;
+            }
+        }
+
+        textarea {
+            border-radius: 20px;
+            border: 1px solid $color-69727d;
+
+            &::placeholder {
+                color: $color-a8a8a8;
+            }
+        }
+    }
+}
+
+.password-input {
+    .show-password-input {
+        top: 50% !important;
+        transform: translateY(-50%);
+        right: 30px !important;
+    }
+}
+
+.checkbox-btn,
+.radiobtn-btn {
+    p {
+        display: flex;
+
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+        }
+    }
+}
+
+.custom-checkbox {
+    .login-check-input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            &~ {
+                .login-checkmark {
+                    &::before {
+                        background-color: $color-013945;
+                    }
+
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-checkmark {
+        padding-left: 35px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 26px;
+            min-width: 26px;
+            width: 16px;
+            border: 1px solid $color-013945;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border-radius: 5px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 10px;
+            top: 8px;
+            width: 7px;
+            height: 12px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.main-label {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+
+    &li {
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .login-check-input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            &~ {
+                .login-checkmark {
+                    background-color: $black;
+
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-checkmark {
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+        border: 1px solid $color-013945;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 7px;
+            top: 3px;
+            width: 7px;
+            height: 12px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &.valid {
+        .login-checkmark {
+            background-color: $color-013945;
+            border-color: $color-013945;
+
+            &::after {
+                display: block;
+            }
+        }
+    }
+}
+
+.quick-contact-section {
+    .wpcf7-response-output {
+        text-align: center;
+        color: $white;
+    }
+}
+
+.select2-results {
+    // height: 400px !important;
+    width: 100%;
+
+    // .select2-results__options {
+    //     max-height: 400px !important;
+    // }
+}

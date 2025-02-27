@@ -1,0 +1,128 @@
+.news-open-hero {
+    height: 520px;
+}
+
+.news-section {
+    height: 670px;
+
+    @include media-breakpoint-down(sm) {
+        height: auto;
+    }
+
+    .news-img {
+        @include media-breakpoint-down(sm) {
+            height: 305px !important;
+        }
+    }
+
+    .news-block {
+        padding: 35px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 20px;
+        }
+    }
+
+    .elementor-heading-title {
+        strong {
+            font-size: 16px;
+            line-height: 16px;
+            color: #4d4d4d;
+        }
+    }
+}
+
+.hero-bottom-content {
+    margin-top: -30px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: -70px;
+    }
+
+    .ssbp-wrap {
+        .ssbp-list {
+            li {
+                margin-top: 0 !important;
+                margin-left: 20px !important;
+
+                &:first-child {
+                    margin-left: 0 !important;
+                }
+
+                a {
+                    background-color: transparent !important;
+                    border: none;
+                    height: 20px !important;
+                    width: 20px !important;
+
+                    svg {
+                        display: block !important;
+                        height: 30px !important;
+                        width: 30px !important;
+
+                        path {
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    .color-icon {
+                        display: none !important;
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill: $color-013945;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.news-card-section{
+    #ajaxLoader{
+        width: 50px;
+        margin: auto;
+    }
+}
+
+.fancybox-container {
+    .fancybox-bg {
+        background-color: $black !important;
+        opacity: 1 !important;
+    }
+
+    .fancybox-button--zoom,
+    .fancybox-button--play,
+    .fancybox-button--thumbs {
+        display: none !important;
+    }
+
+    .fancybox-button--close {
+        height: 62px;
+        width: 94px;
+        background-color: $color-013945;
+        border-radius: 100px;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: $color-139cd5;
+        }
+    }
+}
+
+// .post-content-img {
+//     min-width: 260px;
+// }
+
+.news-open-content {
+    .news-open-content-a {
+        &:hover {
+            color: $color-013945 !important;
+        }
+    }
+}

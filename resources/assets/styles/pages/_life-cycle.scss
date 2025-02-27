@@ -1,0 +1,19 @@
+.divider {
+    border-top: 0.5px solid #f3f2f2;
+}
+
+.terms-section {
+    .terms {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.help-section {
+    .help-img {
+        height: 710px !important;
+
+        @include media-breakpoint-down(lg){
+            height:560px;
+        }
+    }
+}

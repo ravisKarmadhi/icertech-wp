@@ -1,0 +1,33 @@
+.contact-section {
+    .contact-social-media {
+        li {
+            &:last-child {
+                margin-right: 0 !important;
+            }
+
+            a {
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .contact-map {
+        height: 755px;
+
+        @include media-breakpoint-down(lg) {
+            height: 400px;
+        }
+    }
+
+    .contact-form {
+
+        input,
+        textarea {
+            &:focus {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1px;
+            }
+        }
+    }
+}

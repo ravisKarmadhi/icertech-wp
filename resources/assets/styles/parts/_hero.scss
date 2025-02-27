@@ -1,0 +1,108 @@
+.hero-section {
+    height: 700px;
+}
+
+.home-hero-section {
+    height: 1038px;
+
+    @include media-breakpoint-down(lg) {
+        height: 828px;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .home-hero-content {
+        top: 45%;
+        transform: translateY(-50%);
+
+        @include media-breakpoint-down(lg) {
+            top: 50%;
+        }
+    }
+
+    .bg-img {
+        background-image: url("/wp-content/uploads/2024/09/curve.svg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 1500px auto;
+
+        @include media-breakpoint-down(lg) {
+            background-size: 1500px 20%;
+        }
+    }
+
+    &.box-hero-section {
+        .home-hero-content {
+            top: 0;
+            padding: 140px 0 100px;
+            height: calc(100% - 505px);
+            transform: translateY(0);
+
+            @include media-breakpoint-down(lg) {
+                height: calc(100% - 135px);
+                padding: 220px 0 100px;
+            }
+        }
+
+        &.greengra-shape {
+            .bg-img {
+                background-image: url("/wp-content/uploads/2024/09/curve-2.svg");
+            }
+        }
+
+        &.green-shape {
+            .bg-img {
+                background-image: url("/wp-content/uploads/2024/09/curve-green.svg");
+            }
+        }
+
+        .red-box-img {
+            img {
+                max-width: 465px;
+                width: 100%;
+            }
+        }
+
+        &.hero-section {
+            height: 1209px;
+
+            @include media-breakpoint-down(lg) {
+                height: 828px;
+            }
+
+            .home-hero-content {
+                height: calc(100% - 740px);
+
+                @include media-breakpoint-down(lg) {
+                    height: calc(100% - 135px);
+                }
+            }
+
+            .red-box-img {
+                img {
+                    max-width: 800px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &.sub-hero-section {
+        height: 705px !important;
+
+        .bg-layer {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .home-hero-title {
+            color: $white;
+        }
+
+        .bg-img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.benefit-slider-section {
+    .benefit-img {
+        height: 540px;
+
+        @include media-breakpoint-down(lg){
+            height:auto;
+        }
+    }
+}
+
+.local-center-section {
+    .center-img {
+        @include media-breakpoint-up(lg) {
+            height: 581px;
+        }
+
+    }
+}
+.reuse-idea-slider {
+    .idea-img {
+        height: 540px;
+
+        @include media-breakpoint-down(lg){
+            height:auto;
+        }
+    }
+}

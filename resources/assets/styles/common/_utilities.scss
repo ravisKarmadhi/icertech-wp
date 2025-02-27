@@ -1,0 +1,317 @@
+.bg-139cd5 {
+    background-color: $color-139cd5;
+}
+
+.bg-013945 {
+    background-color: $color-013945;
+}
+
+.bg-4aa882 {
+    background-color: $color-4aa882;
+}
+
+.bg-25abbf {
+    background-color: $color-25abbf;
+}
+
+.bg-80b15a {
+    background-color: $color-80b15a;
+}
+
+.bg-59407a {
+    background-color: $color-59407a;
+}
+
+.bg-df5e34 {
+    background-color: $color-df5e34;
+}
+
+.bg-f2f3f4 {
+    background-color: $color-f2f3f4;
+}
+
+.bg-4d4d4d {
+    background-color: $color-4d4d4d;
+}
+
+.bg-a8a8a8 {
+    background-color: $color-a8a8a8;
+}
+
+.bg-dadada {
+    background-color: $color-dadada;
+}
+
+.bg-333333 {
+    background-color: $color-333333;
+}
+
+.bg-666666 {
+    background-color: $color-666666;
+}
+
+.bg-00000010 {
+    background-color: $color-00000010;
+}
+
+.bg-ffffff30 {
+    background-color: $color-ffffff30;
+}
+
+.bg-fff {
+    background-color: $color-fff;
+}
+
+.bg-c36 {
+    background-color: $color-c36;
+}
+
+.bg-8F1838 {
+    background-color: $color-8F1838;
+}
+
+// text ===============================
+
+.text-139cd5 {
+    color: $color-139cd5;
+}
+
+.text-c02b0a {
+    color: $color-c02b0a;
+}
+
+.text-013945 {
+    color: $color-013945;
+}
+
+.text-4aa882 {
+    color: $color-4aa882;
+}
+
+.text-25abbf {
+    color: $color-25abbf;
+}
+
+.text-80b15a {
+    color: $color-80b15a;
+}
+
+.text-59407a {
+    color: $color-59407a;
+}
+
+.text-df5e34 {
+    color: $color-df5e34;
+}
+
+.text-f2f3f4 {
+    color: $color-f2f3f4;
+}
+
+.text-4d4d4d {
+    color: $color-4d4d4d;
+}
+
+.text-a8a8a8 {
+    color: $color-a8a8a8;
+}
+
+.text-dadada {
+    color: $color-dadada;
+}
+
+.text-333333 {
+    color: $color-333333;
+}
+
+.text-666666 {
+    color: $color-666666;
+}
+
+.text-00000010 {
+    color: $color-00000010;
+}
+
+.text-ffffff30 {
+    color: $color-ffffff30;
+}
+
+.text-fff {
+    color: $color-fff;
+}
+
+.text-c36 {
+    color: $color-c36;
+}
+
+// font=============================
+
+.font13 {
+    font-size: $font13;
+}
+
+.font15 {
+    font-size: $font15;
+}
+
+.font16 {
+    font-size: $font16;
+}
+
+.font18 {
+    font-size: $font18;
+}
+
+.font20 {
+    font-size: $font20;
+}
+
+.font22 {
+    font-size: $font22;
+}
+
+.font24 {
+    font-size: $font24;
+}
+
+.font28 {
+    font-size: $font28;
+}
+
+.font30 {
+    font-size: $font30;
+}
+
+.font32 {
+    font-size: $font32;
+}
+
+.font40 {
+    font-size: $font40;
+}
+
+.font48 {
+    font-size: $font48;
+}
+
+.font70 {
+    font-size: $font70;
+}
+
+// line-height =====================
+
+.leading24 {
+    line-height: $leading24 !important;
+}
+
+.leading16 {
+    line-height: $leading16;
+}
+
+.leading35 {
+    line-height: $leading35;
+}
+
+.leading40 {
+    line-height: $leading40;
+}
+
+// radius
+
+.radius50 {
+    border-radius: 50px !important;
+}
+
+.radius30 {
+    border-radius: 30px;
+}
+
+.radius23 {
+    border-radius: 23px;
+}
+
+.radius20 {
+    border-radius: 20px;
+}
+
+.radius15 {
+    border-radius: 15px;
+}
+
+.radius10 {
+    border-radius: 10px;
+}
+
+@include media-breakpoint-down(lg) {
+    .res-font15 {
+        font-size: $font15;
+    }
+
+    .res-font16 {
+        font-size: $font16;
+    }
+
+    .res-font18 {
+        font-size: $font18;
+    }
+
+    .res-font20 {
+        font-size: $font20;
+    }
+
+    .res-font22 {
+        font-size: $font22;
+    }
+
+    .res-font24 {
+        font-size: $font24;
+    }
+
+    .res-font28 {
+        font-size: $font28;
+    }
+
+    .res-font30 {
+        font-size: $font30;
+    }
+
+    .res-font32 {
+        font-size: $font32;
+    }
+
+    .res-font40 {
+        font-size: $font40;
+    }
+
+    .res-font48 {
+        font-size: $font48;
+    }
+
+    .res-leading20 {
+        line-height: $leading20 !important;
+    }
+
+    .res-leading24 {
+        line-height: $leading24 !important;
+    }
+
+    .res-leading16 {
+        line-height: $leading16 !important;
+    }
+
+    .res-bg-transparent {
+        background-color: transparent !important;
+    }
+
+    .res-radius15 {
+        border-radius: 15px !important;
+    }
+
+    .res-no-radius {
+        border-radius: 0 !important;
+    }
+
+    .res-text-white {
+        color: $white !important;
+    }
+}

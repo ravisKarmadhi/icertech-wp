@@ -1,0 +1,157 @@
+.footer {
+    .footer-section {
+        margin-top: -100px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: -120px;
+        }
+    }
+
+    .footer-links {
+        li {
+            a {
+                &.active,
+                &:hover {
+                    color: $color-139cd5 !important;
+                }
+            }
+        }
+    }
+
+    .footer-logo {
+        width: 265px;
+
+        @include media-breakpoint-down(sm) {
+            width: 80%;
+        }
+    }
+
+    .footer-newsletter {
+        input {
+            height: 60px;
+            font-weight: 500;
+            font-size: $font18;
+
+            @include media-breakpoint-up(lg) {
+                padding-right: 230px !important;
+            }
+
+            &::placeholder {
+                font-family: "RedHatDisplay-VariableFont_wght";
+                font-size: $font18;
+                color: #d3d3d3;
+                font-weight: 500;
+            }
+        }
+
+        .btnA {
+            padding: 0px 66px;
+        }
+    }
+
+    .footer-social-media {
+        li {
+            &:last-child {
+                margin-right: 0 !important;
+            }
+
+            a {
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .footer-brandlogo {
+        height: 72px;
+
+        &:first-child {
+            margin-right: 100px !important;
+
+            @include media-breakpoint-down(lg) {
+                margin-right: 20px !important;
+            }
+        }
+
+        &:nth-child(2) {
+            width: 75px;
+        }
+
+        &:last-child {
+            width: 173px;
+        }
+
+        @include media-breakpoint-down(lg) {
+
+            &:nth-child(2),
+            &:last-child {
+                width: 40px;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 45px;
+        }
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+    }
+
+    &.gray-footer {
+        background-color: $color-f2f3f4;
+    }
+}
+
+.social-icon {
+    height: 22px;
+}
+
+.master-newsletter {
+    .wpcf7 {
+        width: 100%;
+    }
+}
+
+.sign-up-menu {
+    padding: 55px 125px !important;
+
+    @include media-breakpoint-down(lg) {
+        padding: 30px 20px !important;
+    }
+}
+
+.footer-newsletter {
+    input {
+        height: 60px;
+        font-weight: 500;
+        font-size: $font18;
+        color: #d3d3d3;
+
+        @include media-breakpoint-up(lg) {
+            padding-right: 230px !important;
+        }
+
+        &::placeholder {
+            font-family: "RedHatDisplay-VariableFont_wght";
+            font-size: $font18;
+            color: #d3d3d3;
+            font-weight: 500;
+        }
+    }
+
+    .btnA {
+        padding: 0px 66px;
+    }
+
+    &>div {
+        width: 100%;
+    }
+
+    p {
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+    }
+}

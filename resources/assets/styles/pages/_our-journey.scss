@@ -1,0 +1,37 @@
+.journey-slider-section {
+    .journey-img {
+        height: 500px;
+        top: 40px;
+
+        @include media-breakpoint-down(lg) {
+            height: 300px;
+        }
+    }
+
+    .journey-part {
+        border-left: 5px solid $color-013945;
+        padding-left: 100px;
+
+        @include media-breakpoint-down(lg) {
+            padding-left: 60px;
+        }
+
+        &::before {
+            content: "";
+            height: 25px;
+            width: 25px;
+            margin-bottom: 35px;
+            background-color: $color-013945;
+            border-radius: 100px;
+            position: absolute;
+            left: 50%;
+
+            @include media-breakpoint-down(lg) {
+                left: 5px;
+                z-index: 1;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+}

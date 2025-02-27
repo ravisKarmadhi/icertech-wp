@@ -1,0 +1,9 @@
+.visit-recycle-section {
+    .visit-recycle-img {
+        height: 581px;
+
+        @include media-breakpoint-down(lg) {
+            height: 315px;
+        }
+    }
+}

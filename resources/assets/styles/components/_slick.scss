@@ -1,0 +1,380 @@
+.single-product-slider,
+.range-slider {
+    div {
+        height: 100%;
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.history-section {
+    .history-data-slider {
+        .slick-list {
+            margin-right: -20px;
+            margin-left: -20px;
+
+            .history-card {
+                padding-right: 20px;
+                padding-left: 20px;
+
+
+                .history-img {
+                    height: 400px;
+
+                    @include media-breakpoint-down(lg) {
+                        height: 280px;
+                    }
+
+                    .timeline-bg {
+                        height: 104px;
+                        width: 250px;
+                    }
+                }
+
+                .history-content {
+                    height: 108px;
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        bottom: 0;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.testimonial-slider {
+    .slick-dots {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: initial;
+        width: 100%;
+        margin-top: 35px;
+
+        li {
+            height: fit-content;
+            width: fit-content;
+
+            button {
+                display: block;
+                width: 11px;
+                height: 11px;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $white;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background-color: $color-013945;
+                }
+            }
+        }
+    }
+}
+
+.logo-slider-section {
+    .logo-img {
+
+        // height: 108px;
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+.our-team-section,
+.range-section {
+    .team-arrow-wrapper {
+        .slick-arrow {
+            height: 24px;
+        }
+
+        .slick-dots {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: initial;
+            width: auto;
+
+            li {
+                height: fit-content;
+                width: fit-content;
+
+                button {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    border: none;
+                    border-radius: 100%;
+                    background-color: rgba($color: $black, $alpha: 0.2);
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .team-member-slider,
+    .range-slider {
+        .slick-list {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .slick-slide {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.image-slider-section {
+    .image-slider {
+        .slick-list {
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .slick-slide {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        .image-slider-img {
+            height: 463px;
+
+            @include media-breakpoint-down(lg) {
+                height: 400px;
+            }
+        }
+    }
+}
+
+.slick-arrows-wrapper,
+.range-slick-arrows-wrapper {
+    background-color: $color-139cd5;
+    border-radius: var(--bs-border-radius-pill);
+    padding: 13px 7px;
+
+    .slick-arrow,
+    .slick-dots {
+        position: initial;
+    }
+
+    .slick-arrow {
+        height: 24px;
+
+        &.slick-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @include media-breakpoint-down(lg) {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .slick-dots {
+        display: inline-flex;
+        width: auto;
+        flex-direction: column;
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: row;
+            padding: 10px 15px;
+        }
+
+        li {
+            height: fit-content;
+            width: fit-content;
+            margin: 5px 0;
+
+            @include media-breakpoint-down(lg) {
+                margin: 0 5px;
+            }
+
+            button {
+                height: 15px;
+                width: 15px;
+                background-color: $white;
+                border-radius: 50%;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background-color: $color-013945 !important;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: absolute !important;
+        z-index: 3;
+        top: auto;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        right: auto !important;
+        bottom: 0;
+    }
+}
+
+.leftright-slider-section {
+    &.left-slider-part {
+        &.content_slider {
+            .leftright-content {
+                @include media-breakpoint-up(lg) {
+                    padding-bottom: 100px;
+                }
+            }
+
+            .slick-arrows-wrapper {
+                @include media-breakpoint-up(lg) {
+                    bottom: 30px;
+                }
+
+                .slick--prev {
+                    transform: rotate(-90deg);
+                }
+
+                .slick--next {
+                    transform: rotate(270deg);
+                }
+
+                .slick-dots {
+                    flex-direction: row;
+
+                    li {
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+        }
+
+        &.image_slider {
+            .slick-arrows-wrapper {
+                @include media-breakpoint-up(lg) {
+                    flex-direction: column;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .slick-dots {
+                    @include media-breakpoint-up(lg) {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+
+    &.right-slider-part {
+        &.with_image_slider {
+            .slick-arrows-wrapper {
+                @include media-breakpoint-up(lg) {
+                    right: 44%;
+                }
+            }
+        }
+
+        &.with_content_slider {
+            .leftright-content {
+                @include media-breakpoint-up(lg) {
+                    padding-left: 150px;
+                }
+            }
+        }
+    }
+}
+
+.single-product-slider {
+    .slick-dots {
+        justify-content: center;
+        flex-direction: column;
+        bottom: 0%;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 30px;
+
+        li {
+            margin: 5px 0;
+            height: 15px;
+            width: 15px;
+
+            button {
+                background: rgba($color: $color-666666, $alpha: 0.2);
+                border-radius: 50%;
+            }
+
+            &.slick-active {
+                button {
+                    background: rgba($color: $color-666666, $alpha: 0.6);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+fontX:10px
+fontS:12px
+fontM:13px
+fontL:14px
+fontXX:16px
+fontXS:18px
+fontXM:20px
+fontXL:22px
+fontSX:24px
+fontSS:26px
+fontSM:28px
+fontSL:39px
+fontMX:50px
+fontMS:60px
+fontMM:70px
+
+textcream: #EBEBE7;
+textgrayone: #949494;
+textgraytwo: #919191;
+textlightcream: #FDFDFD;
+textblack: #000000;
+textlightgray: #D5D5D5;
+
+leadingX:22px
+leadingS:24px
+leadingM:36px
+leadingL:65px
+
+dmsans-regular
+dmsans-medium
+dmsans-bold
+
+bgcream: #EBEBE7;
+bggrayone: #949494;
+bggraytwo: #919191;
+bglightcream: #FDFDFD;
+bgblack: #000000;
+bglightgray: #D5D5D5;

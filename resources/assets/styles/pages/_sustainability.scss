@@ -1,0 +1,25 @@
+.sustainability-section {
+    .image-section {
+        .page-img {
+            height: 475px;
+
+            @include media-breakpoint-down(lg) {
+                height: 375px;
+            }
+        }
+
+        .row {
+            &>* {
+
+                @include media-breakpoint-up(lg) {
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

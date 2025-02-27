@@ -1,0 +1,155 @@
+.tab-container {
+    .tab-menu {
+        a {
+            height: 72px;
+
+            &.tab-btn {
+                &.active,&.tab-active {
+                    background-color: $color-013945;
+                    color: $white;
+                }
+                
+                &.active:hover {
+                    background-color: $color-013945;
+                    border-color: $color-013945;
+                    color: $white;
+                }
+
+                background-color: $color-139cd5 ;
+                color: $white;
+
+                @include media-breakpoint-up(lg) {
+                    &:hover {
+                        background-color: transparent;
+                        color: $color-139cd5;
+                        border: 2px solid $color-139cd5;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-tab-container {
+    .tab-menu {
+        a {
+            @include media-breakpoint-up(lg) {
+                height: 74px;
+                background-color: $white;
+                color: $color-139cd5;
+
+                &.active {
+                    background-color: $color-013945;
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}
+
+.tab,
+.sample-tab {
+    display: none;
+}
+
+.tab-active {
+    display: block;
+}
+
+
+
+.select2-container {
+    width: 100% !important;
+
+    .select2-search__field {
+        display: none;
+    }
+
+    .select2-selection--single[aria-expanded="true"] {
+        border-radius: 30px 30px 0px 0px;
+        background-color: $color-f2f3f4 !important;
+
+        .select2-selection__arrow {
+            transform: rotate(180deg);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .select2-selection--single {
+        height: 58px !important;
+        width: 300px !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        background-color: $color-f2f3f4;
+
+        .select2-selection__rendered {
+            height: 58px !important;
+            line-height: 56px !important;
+            padding: 0 24px;
+            font-family: "RedHatDisplay-VariableFont_wght";
+            font-weight: 500;
+            font-size: $font18;
+            color: $black;
+
+            .select2-selection__placeholder {
+                font-family: "RedHatDisplay-VariableFont_wght";
+                font-weight: 500;
+                font-size: $font18;
+                color: $black;
+            }
+        }
+
+        .select2-selection__arrow {
+            height: 100%;
+            top: 0;
+            right: 20px;
+            width: 16px;
+            background-image: url('/wp-content/uploads/2024/08/tab-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            b {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.categories-select2 {
+    background-color: $color-f2f3f4 !important;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    max-height: 415px;
+    margin-top: 30px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 7px !important;
+            font-family: "RedHatDisplay-VariableFont_wght";
+            font-weight: 500;
+            font-size: $font18;
+            color: $black;
+            text-align: center;
+        }
+    }
+
+}
+
+.product-section {
+    .tab-container {
+        .tab-menu {
+            .js-select2 {
+                width: 0px;
+                opacity: 0;
+            }
+        }
+    }
+}

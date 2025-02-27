@@ -1,0 +1,92 @@
+.icon-section {
+    &.career-icon-section {
+        .icon-box {
+            padding: 0px 65px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0px;
+            }
+        }
+    }
+
+    .icon-box {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    }
+
+    .icon-img {
+        width: 58px;
+    }
+}
+
+
+.range-card-section {
+    .bg-gradient-layer {
+        background: linear-gradient(180deg, rgb(128, 177, 90) 0%, rgb(37, 171, 191) 100%);
+    }
+}
+
+.our-range-inner-section {
+    .our-range-inner-box {
+        padding: 65px 0px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 15px 0px;
+        }
+
+        &.bg-gradient-layer {
+            background: linear-gradient(180deg, rgb(128, 177, 90) 0%, rgb(37, 171, 191) 100%);
+        }
+
+        .our-range-inner-img {
+            // height: 523px;
+
+            // @include media-breakpoint-down(lg) {
+            //     height: 300px;
+            // }
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .our-range-inner-icon {
+            border-top: 1px solid $color-ffffff30;
+
+            .box-icons {
+                height: 55px;
+            }
+        }
+    }
+}
+
+.blue-box-section {
+    .blue-box-icon {
+        width: 45px;
+    }
+}
+
+.pagination {
+    .page-item {
+        &.active {
+            a.page-link {
+                color: $color-139cd5;
+            }
+        }
+
+        a.page-link {
+            border: none;
+            background: transparent;
+            color: $color-013945;
+            font-size: $font20;
+            font-weight: 500;
+
+            &:hover {
+                color: $color-139cd5;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

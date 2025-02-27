@@ -1,0 +1,21 @@
+.solution-col {
+    @include media-breakpoint-down(lg) {
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.single-solution{
+    .quote-section{
+        background-color: transparent !important;
+    }
+}
+
+.purpose-picture-section {
+    height: 635px;
+
+    @include media-breakpoint-down(lg) {
+        height: 300px;
+    }
+}

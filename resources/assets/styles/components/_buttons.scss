@@ -1,0 +1,150 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+
+.top-header-btn {
+    padding: 3px 15px;
+    color: $white;
+    background-color: $color-139cd5;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+
+    &:hover {
+        border: 2px solid $white;
+        background-color: transparent;
+    }
+}
+
+.header-btn {
+    height: 60px;
+    width: 60px;
+    // padding: 0px 25px;
+    background-color: $color-139cd5;
+    color: $white;
+
+    &:hover {
+        background-color: $color-013945;
+    }
+}
+
+.btnA {
+    height: 60px;
+    padding: 0px 35px;
+    border: 2px solid;
+
+    &.bg-013945-btn {
+        background-color: $color-013945;
+        color: $white;
+        border-color: $color-013945;
+
+        &:hover {
+            background-color: $white;
+            border-color: $white;
+            color: $color-139cd5;
+        }
+    }
+
+    &.shooping-cart-btn {
+        background-color: $color-139cd5;
+        color: $white;
+
+        &:hover {
+            background-color: $color-013945;
+        }
+    }
+
+    &.bg-013945 {
+        background-color: $color-013945;
+        color: $white;
+        border-color: $color-013945;
+
+        &:hover {
+            color: $black;
+            background-color: transparent;
+        }
+    }
+
+    &.bg-139cd5-btn {
+        background-color: $color-013945;
+        color: $white;
+        border-color: $color-013945;
+
+        &:hover {
+            border-color: $color-139cd5;
+            background-color: $color-139cd5;
+        }
+    }
+
+    &.bg-139cd5-btn2 {
+        background-color: $color-013945;
+        color: $white;
+        border-color: $color-013945;
+
+        &:hover {
+            border-color: $color-013945;
+            color: $color-013945;
+            background-color: transparent;
+        }
+    }
+
+    &.white-border-btn {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $black !important;
+        }
+    }
+
+    &.color-139cd5-btn{
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $color-139cd5 !important;
+        }
+    }
+
+    &.white-border-139cd5-bg-btn {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background-color: $color-139cd5;
+            border-color: $color-139cd5;
+        }
+    }
+
+    &.transparent-bg-btn {
+        background-color: transparent;
+        border-color: $color-013945;
+
+        &:hover {
+            background-color: $color-013945;
+            color: $white;
+        }
+    }
+}
+
+.place-btn {
+    background-color: $color-013945 !important;
+
+    &:hover {
+        background-color: #25ABBF !important;
+    }
+}

@@ -1,0 +1,97 @@
+.red-box-section {
+
+    // margin-top: -335px;
+
+    // @include media-breakpoint-down(lg) {
+    //     margin-top: -150px;
+    // }
+
+    // .red-box-img {
+    //     top: -42%;
+    //     width: 425px !important;
+
+    //     @include media-breakpoint-down(lg) {
+    //         top: -15%;
+    //     }
+    // }
+
+    .redbox-bg-img {
+        // height: 335px;
+        // background-image: url("/wp-content/uploads/2024/09/range-card-section-bg.png");
+        // background-size: 100% 100%;
+        // background-position: center;
+        // background-repeat: no-repeat;
+
+        @include media-breakpoint-down(lg) {
+            height: 150px;
+            background-size: 598px 100%;
+        }
+
+        img {
+            height: 101%;
+
+            &.greengra-img,
+            &.green-img {
+                display: none;
+            }
+        }
+    }
+
+    &.greengra-bg-layer {
+        // .redbox-bg-img {
+        //     // background-image: url("/wp-content/uploads/2024/09/enviro-curve.png");
+        //     img {
+        //         &.greengra-img {
+        //             display: block;
+        //         }
+
+        //         &.blue-img,
+        //         &.green-img {
+        //             display: none;
+        //         }
+        //     }
+        // }
+
+        .bottom-radius {
+            background: linear-gradient(0deg,
+                    $color-25abbf 0%,
+                    $color-4aa882 100%);
+        }
+    }
+
+    &.green-bg-layer {
+        // .redbox-bg-img {
+        //     // background-image: url("/wp-content/uploads/2024/08/range-card-section-bg3.png");
+        //     img {
+        //         &.green-img {
+        //             display: block;
+        //         }
+
+        //         &.greengra-img,
+        //         &.blue-img {
+        //             display: none;
+        //         }
+        //     }
+        // }
+
+        .bottom-radius {
+            background-color: $color-4aa882;
+        }
+    }
+
+    .bottom-radius {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: $color-139cd5;
+
+        .red-box-btns {
+            .btnA {
+                &:last-child {
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

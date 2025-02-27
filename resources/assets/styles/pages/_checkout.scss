@@ -1,0 +1,181 @@
+.checkout-section {
+    .woocommerce {
+        .woocommerce-form-coupon-toggle {
+            .woocommerce-info {
+                border-radius: 15px;
+
+                .showcoupon {
+                    color: $color-c36;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color-336;
+                    }
+                }
+            }
+        }
+
+        .checkout_coupon {
+            background-color: $color-f2f3f4;
+            border: 1px solid $color-139cd5;
+            border-radius: 5px;
+
+            .form-row {
+                .input-text {
+                    height: 51px;
+                    background-color: $white;
+                    border-radius: 100px;
+                    font-size: $font16;
+                    font-weight: 400;
+                    color: $black;
+                    padding: 0px 15px;
+                    border: none;
+                }
+            }
+        }
+
+        .checkout {
+
+            .validate-required,
+            .form-row-wide,
+            .notes {
+                label {
+                    color: $color-013945;
+                    font-size: $font18;
+                    font-weight: 500;
+                    font-family: "RedHatDisplay-VariableFont_wght";
+                }
+            }
+
+            .select2-selection {
+                border: none;
+                width: 100% !important;
+                justify-content: start;
+            }
+
+            textarea {
+                font-size: $font16;
+                font-weight: 400;
+                color: $black;
+                padding: 10px 15px;
+                height: 125px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .shop_table {
+        .title {
+            background-color: $color-139cd5;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .cart_item {
+            .product-name {
+                border-bottom: 1px solid rgba($color: $black, $alpha: 0.1)
+            }
+        }
+    }
+
+    .shipping-checkout,
+    .tax-checkout {
+        padding-left: 1rem !important;
+        background-color: $color-139cd5;
+        color: $white;
+
+        .woocommerce-shipping-methods,
+        .woocommerce-Price-amount {
+            flex: 0 0 auto;
+            width: 50%;
+            font-family: "RedHatDisplay-VariableFont_wght";
+            font-size: 15px;
+            font-weight: 700 !important;
+            padding: 15px 0 15px 8px !important;
+            color: $black;
+            background-color: $white;
+        }
+    }
+
+    .woocommerce-checkout-payment {
+        margin-bottom: 100px;
+        margin-top: 20px;
+        background-color: $color-139cd5 !important;
+        border-radius: 30px !important;
+
+        .woocommerce-privacy-policy-text,
+        .woocommerce-terms-and-conditions-checkbox-text {
+            color: $color-013945;
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+
+        button {
+            height: 61px;
+            background-color: $color-013945;
+            border-radius: 100px;
+            padding: 0px 40px !important;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .shop_table {
+        border-collapse: collapse !important;
+        border-radius: 10px !important;
+        overflow: hidden;
+
+        tbody {
+            tr {
+                background-color: hsla(0, 0%, 50.2%, .0705882353);
+                td{
+                    &.woocommerce-table__product-name{
+                        a{
+                            color: $color-c36;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            tr {
+                th{
+                    background-color: $color-139cd5;
+                    color: $white;
+                }
+            }
+        }
+
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                &>* {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .woocommerce-customer-details{
+        padding-bottom: 50px;
+    }
+}
+
+.input-text {
+    height: 51px;
+    background-color: $color-f2f3f4;
+    border-radius: 100px;
+    font-size: $font16;
+    font-weight: 400;
+    color: $black;
+    padding: 0px 15px;
+    border: none;
+}

@@ -1,0 +1,12 @@
+.filter-btn-row {
+    .filter-btn {
+        &.active {
+            color: $color-139cd5;
+            border-bottom: 2px solid $color-139cd5 !important;
+        }
+
+        &:last-child {
+            margin-right: 0 !important;
+        }
+    }
+}

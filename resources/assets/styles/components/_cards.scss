@@ -1,0 +1,443 @@
+.shop-card {
+    height: 458px;
+
+    @include media-breakpoint-down(md) {
+        height: 362px;
+    }
+
+    &.shop-card-img {
+        height: 303px;
+
+        @include media-breakpoint-up(md) {
+            height: auto;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 213px;
+        }
+    }
+
+    &.sample-card-img {
+        height: 175px;
+
+
+        @include media-breakpoint-down(lg) {
+            height: 175px !important;
+            width: 175px !important;
+        }
+    }
+
+    &:hover {
+        background-color: $color-139cd5 !important;
+
+        .shop-card-title {
+            color: $white !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .header-card {
+        height: 132px;
+        border: 1px solid $white;
+
+        .header-card-img {
+            height: 100px;
+        }
+
+        &:hover {
+            background-color: rgba($color: $color-25abbf, $alpha: 0.5);
+        }
+    }
+
+    .shop-card {
+        height: 458px;
+
+        .shop-card-img {
+            height: 303px;
+            width: 303px;
+        }
+
+        &:hover {
+            background-color: $color-139cd5 !important;
+            color: $white !important;
+        }
+    }
+
+    .sample-card {
+        height: 494px;
+
+        .sample-card-img {
+            height: 175px;
+            width: 175px;
+        }
+    }
+
+    .header-shop-card {
+        height: 457px;
+        z-index: 1;
+
+        .shop-card-hover {
+            transform: translateY(0);
+            height: 290px;
+        }
+
+        .header-shop-card-img {
+
+            // width: 43%;
+            img {
+                max-width: 256px;
+                width: 80%;
+            }
+        }
+
+        .shadow-img {
+            height: 45px;
+        }
+
+        .shadow-img img {
+            width: 220px;
+        }
+
+        &::after {
+            content: "";
+            background: url("/wp-content/uploads/2024/08/cards-hover-img.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            .shop-card-hover {
+                transform: translateY(-20px);
+            }
+
+            .shadow-img img {
+                width: 150px;
+            }
+
+            &::after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.range-card {
+    height: 457px;
+    z-index: 1;
+    padding: 60px 20px 20px;
+
+    &.active {
+        &::after {
+            content: '';
+            background: url('/wp-content/uploads/2024/08/cards-hover-img.svg');
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     width: 0;
+        //     height: 0;
+        //     border-style: solid;
+        //     border-width: 23px 35px 0;
+        //     border-color: #139cd5 transparent transparent transparent;
+        //     position: absolute;
+        //     bottom: -173px;
+        //     transform: translateX(-50%);
+        //     left: 50%;
+        // }
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 400px;
+    }
+
+    .range-card-hover {
+        height: 290px;
+        transform: translateY(0px);
+    }
+
+    .range-card-img {
+        padding-bottom: 45px;
+        background-image: url('/wp-content/uploads/2024/08/shadow.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+        transition: all 0.3s ease-in-out;
+
+        img {
+            max-width: 256px;
+            width: 90%;
+            object-fit: contain;
+
+            @include media-breakpoint-down(lg) {
+                width: 57%;
+            }
+        }
+    }
+
+    // .shadow-img {
+    //     height: 45px;
+
+    //     img {
+    //         width: 220px;
+    //         @include media-breakpoint-down(lg){
+    //             width: 150px;
+    //         }
+    //     }
+    // }
+
+
+    &::after {
+        content: '';
+        background: url('/wp-content/uploads/2024/08/range-card-line-bg.svg');
+        background-size: 100% 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        .range-card-hover {
+            transform: translateY(-20px);
+        }
+
+        .range-card-img{
+            background-size: 80%;
+        }
+        // .shadow-img img {
+        //     width: 150px;
+        // }
+
+        &::after {
+            content: '';
+            background: url('/wp-content/uploads/2024/08/cards-hover-img.svg');
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.news-card {
+    .news-card-img {
+        height: 350px;
+
+        .news-card-layer {
+            opacity: 0;
+            visibility: hidden;
+            background-color: rgba($color: $black, $alpha: 0.5);
+
+            .news-layer-icon {
+                border: 1px solid $white;
+                height: 48px;
+                width: 48px;
+                transform: scale(0);
+
+                img {
+                    width: 16px;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .news-card-img {
+            .news-card-layer {
+                opacity: 1;
+                visibility: visible;
+
+                .news-layer-icon {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    &.fancybox-content {
+        .news-card-layer {
+            display: none !important;
+        }
+    }
+}
+
+.team-card {
+    .team-img {
+        height: 360px;
+        transition: all .3s ease;
+
+        @include media-breakpoint-down(md) {
+            height: 308px;
+        }
+    }
+
+    .team-content {
+        transform: translateY(70px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+
+        .triangle {
+            width: 258px;
+            height: 139px;
+            margin-top: -136px;
+        }
+
+        .team-description {
+            .team-name {
+                margin-top: -28px;
+            }
+        }
+    }
+
+    &:hover {
+        .team-img {
+            height: 330px;
+        }
+
+        .team-content {
+            transform: translateY(0px);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.solution-box-card,
+.related-product-card {
+    background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-light.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    height: 428px;
+
+    &.white-bg {
+        background-image: url('/wp-content/uploads/2024/08/solution-bg-pattern-white.png');
+    }
+
+    @include media-breakpoint-down(lg) {
+        height: 380px;
+    }
+
+    .solution-box-card-img,
+    .related-product-card-img {
+        img {
+            max-width: 256px;
+            object-fit: contain;
+        }
+
+        // @include media-breakpoint-down(lg) {
+        //     width: 220px !important;
+        // }
+    }
+
+    &:hover {
+        background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-dark.png');
+
+        .solution-box-card-img,
+        .related-product-card-img {
+            img {
+                transform: translateY(-20px);
+            }
+        }
+
+        .related-product-title {
+            color: $white;
+        }
+    }
+}
+
+.rounded-card {
+    .rounded-card-bg {
+        height: 300px;
+        width: 300px;
+        background-color: $color-00000010;
+    }
+
+    &:hover {
+        .rounded-card-bg {
+            background-color: rgba(0, 0, 0, .3);
+        }
+    }
+
+    .rounded-card-img {
+        height: 200px;
+    }
+}
+
+.rounded-card-icon {
+    width: 25px;
+}
+
+.related.products {
+    .single-shop-page {
+        background-image: url('/wp-content/uploads/2024/08/solution-bg-pattern-white.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 390px;
+        transition: all 0.3s ease-in-out;
+
+        &.shop-card-img {
+            height: 303px;
+            transform: translateY(0px);
+
+
+            @include media-breakpoint-up(md) {
+                height: auto;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 213px;
+            }
+        }
+
+        &.sample-card-img {
+            height: 175px;
+
+
+            @include media-breakpoint-down(lg) {
+                height: 175px !important;
+                width: 175px !important;
+            }
+        }
+
+        &:hover {
+            background-image: url('/wp-content/uploads/2024/08/solution-card-bg-pattern-dark.png');
+
+            .shop-card-img {
+                transform: translateY(-20px);
+            }
+
+            .shop-card-title {
+                color: $white !important;
+            }
+        }
+    }
+}
