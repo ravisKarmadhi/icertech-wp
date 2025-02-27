@@ -43,7 +43,9 @@ array(
                                     class="btnA bg-013945-btn d-inline-flex align-items-center justify-content-center rounded-pill font18 fw-medium text-decoration-none transition"><?php echo $our_range['button']['title']; ?></a>
                                 </div>
                             <?php endif; ?>
+                            <?php if(!empty($our_range['heading'])): ?>
                             <div class="font40 res-font28 fw-medium text-white text-center dpt-130 tpt-85"><?php echo $our_range['heading']; ?></div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
